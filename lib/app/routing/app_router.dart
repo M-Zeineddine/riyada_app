@@ -60,7 +60,7 @@ final routerProvider = Provider<GoRouter>((ref) {
                       final court = s.extra as CourtModel?;
                       if (court == null) {
                         // Fallback: fetch by id if you prefer
-                        // return CourtBookingPage(court: ref.read(courtByIdProvider(s.pathParameters['id']!))!);
+                        // return CourtBookingPage(court: ref.read(courtByIdProvider(s.pathParameters['id']!))!)---;
                         return const SizedBox.shrink(); // or an error page
                       }
                       return CourtBookingPage(court: court);

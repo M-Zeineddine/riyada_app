@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+package riyada.courts;
+
+// Sorting options (typed, standard for gRPC)
+enum SortOrder {
+  SORT_UNSPECIFIED = 0;
+  NEARBY = 1;
+  PRICE_LOW = 2;
+  PRICE_HIGH = 3;
+}
+
+// One court object (full version)
+message Court {
+  string id = 1;
+  string name = 2;
+  string location = 3;
+  double price_per_hour = 4;
+  string image_url = 5;
+
+  // Note: distance can be computed on backend if client provides user location.
+  // For now we keep it in the response to match your model.
+  double distance_km = 6;
+
+  string sport = 7;
+  repeated string amenities = 8;
+
+  double lat = 9;
+  double lng = 10;
+}
+
+// Request: client asks for courts with filter/sort (backend does filtering)
+message ListCourtsRequest {
+  string query = 1;        // search text
+  string sport = 2;        // e.g. "Football", "Basketball", or empty for all
+  SortOrder sort = 3;      // enum sort
+}
+
+// Response: list of courts
+message ListCourtsResponse {
+  repeated Court courts = 1;
+}
+
+service CourtService {
+  rpc ListCourts (ListCourtsRequest) returns (ListCourtsResponse);
+}

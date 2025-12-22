@@ -1,5 +1,5 @@
 import 'package:grpc/grpc.dart';
-import '../protos/gauge_service.pbgrpc.dart';
+import '../generated/gauge/gauge_service.pbgrpc.dart';
 
 class GaugeApi {
   late final ClientChannel _channel;

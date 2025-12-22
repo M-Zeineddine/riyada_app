@@ -1,0 +1,26 @@
+export const COURTS = [
+    {
+        id: "c1",
+        name: "Green Field Court",
+        location: "Beirut, Lebanon",
+        price_per_hour: 30,
+        image_url: "https://picsum.photos/seed/field1/400/250",
+        distance_km: 3,
+        sport: "Football",
+        amenities: ["Parking", "Showers", "Locker Rooms", "Lights", "Referee Optional"],
+        lat: 33.8938,
+        lng: 35.5018,
+    },
+    {
+        id: "c2",
+        name: "Urban Sports Arena",
+        location: "Saida, Lebanon",
+        price_per_hour: 25,
+        image_url: "https://picsum.photos/seed/field2/400/250",
+        distance_km: 5,
+        sport: "Basketball",
+        amenities: ["Indoor Seating", "Lights", "Cafeteria", "Locker Rooms"],
+        lat: 33.56,
+        lng: 35.375,
+    },
+];

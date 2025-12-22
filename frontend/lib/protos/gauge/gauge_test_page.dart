@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'api/gauge_api.dart';
+import '../../api/gauge_api.dart';
 
 class GaugeTestPage extends StatefulWidget {
   const GaugeTestPage({super.key});

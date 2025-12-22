@@ -1,6 +1,6 @@
 // This is a generated file - do not edit.
 //
-// Generated from gauge_service.proto.
+// Generated from gauge/gauge_service.proto.
 
 // @dart = 3.3
 

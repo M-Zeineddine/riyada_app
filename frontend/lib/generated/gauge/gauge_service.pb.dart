@@ -1,6 +1,6 @@
 // This is a generated file - do not edit.
 //
-// Generated from gauge_service.proto.
+// Generated from gauge/gauge_service.proto.
 
 // @dart = 3.3
 
@@ -39,11 +39,7 @@ class GaugeRequest extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'GaugeRequest',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'gauge'),
       createEmptyInstance: create)
-    ..a<$core.int>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.O3,
-    )
+    ..aI(1, _omitFieldNames ? '' : 'id')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -72,7 +68,7 @@ class GaugeRequest extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 }
 
 /// Server responds with basic info about the gauge.
@@ -102,20 +98,9 @@ class GaugeResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'GaugeResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'gauge'),
       createEmptyInstance: create)
-    ..a<$core.int>(
-      1,
-      _omitFieldNames ? '' : 'id',
-      $pb.PbFieldType.O3,
-    )
-    ..aOS(
-      2,
-      _omitFieldNames ? '' : 'name',
-    )
-    ..a<$core.double>(
-      3,
-      _omitFieldNames ? '' : 'value',
-      $pb.PbFieldType.OD,
-    )
+    ..aI(1, _omitFieldNames ? '' : 'id')
+    ..aOS(2, _omitFieldNames ? '' : 'name')
+    ..aD(3, _omitFieldNames ? '' : 'value')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
@@ -144,7 +129,7 @@ class GaugeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool hasId() => $_has(0);
   @$pb.TagNumber(1)
-  void clearId() => clearField(1);
+  void clearId() => $_clearField(1);
 
   @$pb.TagNumber(2)
   $core.String get name => $_getSZ(1);
@@ -153,7 +138,7 @@ class GaugeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.bool hasName() => $_has(1);
   @$pb.TagNumber(2)
-  void clearName() => clearField(2);
+  void clearName() => $_clearField(2);
 
   @$pb.TagNumber(3)
   $core.double get value => $_getN(2);
@@ -162,7 +147,7 @@ class GaugeResponse extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool hasValue() => $_has(2);
   @$pb.TagNumber(3)
-  void clearValue() => clearField(3);
+  void clearValue() => $_clearField(3);
 }
 
 const $core.bool _omitFieldNames =

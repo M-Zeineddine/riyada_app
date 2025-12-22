@@ -11,7 +11,7 @@ import 'package:riyada_frontend/app/features/user/presentation/profile_page.dart
 import 'package:riyada_frontend/app/features/welcome/welcome_page.dart';
 import 'package:riyada_frontend/app/features/home/presentation/home_page.dart';
 import 'package:riyada_frontend/app/features/court/presentation/courts_page.dart';
-import 'package:riyada_frontend/gauge_test_page.dart';
+import 'package:riyada_frontend/protos/gauge/gauge_test_page.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   return GoRouter(
